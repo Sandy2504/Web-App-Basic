@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <p>Los gehts!</p>
+        <div class="man">
+            <img src="todo-image.jpg" width="300" height="450" alt="man with list">
+        </div>
+    </div>
+    <div class="container">
+        <header>
+            <h2>ToDo App</h2>
+        </header>
+        <main>
+            <div class="toDoList">
+                <form id="enter">
+                    <input id="passedText" placeholder="incloseToDo" type="text">
+                    <button class="btn" type="submit">add</button>
+                </form>
+                <button class="btn" id="wipeOut">erledigte Löschen</button>
+            </div>
+            <form id="advert">
+                <input type="radio" name="status" id="all" checked>
+                <label for="all">all</label>
+                <input type="radio" name="status" id="todo">
+                <label for="todo">todo</label>
+                <input type="radio" name="status" id="done">
+                <label for="done">done</label>
+            </form>
+
+            <ul id="list">
+
+            </ul>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

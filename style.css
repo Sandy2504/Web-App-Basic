@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: end;
+}
+
+header {
+  text-align: center;
+}
+
+.wrapper {
+  margin-right: 20rem;
+  margin-top: 6rem;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 5rem;
+  color: rgb(151, 224, 73);
+  text-shadow: 5px 5px rgb(64, 63, 63);
+}
+
+.man {
+  animation-name: slidein;
+  animation-duration: 3s;
+  animation-iteration-count: 1;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 200%;
+    width: 200%;
+  }
+
+  to {
+    margin-right: 0%;
+    width: 200%;
+  }
+}
+
+#list {
+  background-color: rgb(151, 224, 73);
+  width: 300px;
+  min-height: 60vh;
+  border-radius: 200px;
+  padding-block: 15px;
+}
+
+.list-element {
+  border: 1px solid black;
+  width: 150px;
+  height: 35px;
+  padding-left: 30px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  margin-block-start: 7px;
+  background-color: beige;
+  margin-inline: auto;
+}
+
+#advert {
+  text-align: center;
+  background-color: rgba(128, 128, 128, 0.578);
+  padding-block: 2px;
+  border-radius: 30px;
+  margin-block: 15px;
+  color: beige;
+  accent-color: rgb(151, 224, 73);
+}
+.toDoList {
+  text-align: center;
+  background-color: rgba(128, 128, 128, 0.578);
+  padding-block: 15px;
+  border-radius: 100px;
+  margin-block: 10px;
+}
+
+.btn {
+  background-color: rgb(151, 224, 73);
+  border: none;
+  padding: 4px;
+  border-radius: 6px;
+}
+
+.container {
+  background-color: rgb(85, 76, 76);
+  padding: 30px;
+  margin-top: 10px;
+  margin-right: 10rem;
+  border-radius: 200px;
+  max-width: 800px;
+}
+
+h2 {
+  font-size: 3rem;
+  color: rgb(151, 224, 73);
+}
+
+.check {
+  accent-color: rgb(85, 76, 76);
+  margin-right: 15px;
+}
+#wipeOut {
+  margin-top: 10px;
+}
+
+#passedText {
+  padding: 4px;
+  border-radius: 5px;
+  border: none;
+  background-color: beige;
+}
+
+@media screen and (max-width: 600px) {
+  .man {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .container {
+    max-width: 600px;
+  }
+}
